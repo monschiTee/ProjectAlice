@@ -1,0 +1,130 @@
+{
+	"module": "AliceSatellite",
+	"icon": "air",
+	"description": "This module allows interaction with the Alice satellites",
+	"slotTypes": [],
+	"intents": [
+		{
+			"name": "GetCo2Level",
+			"description": "Benutzer frägt nach dem Co2 Wert",
+			"enabledByDefault": true,
+			"utterances": [
+				"Bitte nenne mir den c o 2 Wert im {Schlafzimmer:=>Room}",
+				"Gib mir den c o 2 Wert in der{Küche:=>Room}",
+				"Gib mir den c o 2 Wert  im {Badezimmer:=>Room}",
+				"Was ist der c o 2 Wert im{Schlafzimmer:=>Room}",
+				"c o 2 Wert im{Keller:=>Room}",
+				"Luftqualität im {Wohnzimmer:=>Room}",
+				"Wie ist die Luft im {Schlafzimmer:=>Room}",
+				"Wie schlecht ist die Luft in der{Küche:=>Room}",
+				"Wie ist die Luftqualität im {Büro:=>Room}",
+				"Was ist der Kohlendixidgehalt im {Wohnzimmer:=>Room}"
+			],
+			"slots": [
+				{
+					"name": "Place",
+					"description": "Das Geräte, von dem aus die Messung durchgeführt wird",
+					"required": false,
+					"type": "Room",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "GetPressure",
+			"description": "Benutzer frägt nach dem Druck",
+			"enabledByDefault": true,
+			"utterances": [
+				"Gib mir den barometrischen Luftdruck {draußen:=>Room}",
+				"Gib mir den barometrischen Luftdruck im {Büro:=>Room}",
+				"Gib mir den Luftdruck im {Wohnzimmer:=>Room}",
+				"Gib mir den Luftdruck im{Keller:=>Room}",
+				"Was ist der Luftdruck {draußen:=>Room}",
+				"Was ist der Luftdruck {draußen:=>Room}",
+				"ALuftdruck in der {Küche:=>Room}",
+				"P p m {draußen:=>Room}",
+				"Was ist der barometrischen Luftdruck {draußen:=>Room}",
+				"Aktueller barometrischen Luftdruck im {Wohnzimmer:=>Room}",
+				"barometrischer Luftdruck im {Schlafzimmer:=>Room}"
+			],
+			"slots": [
+				{
+					"name": "Place",
+					"description": "Das Geräte, von dem aus die Messung durchgeführt wird",
+					"required": false,
+					"type": "Room",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "GetHumidity",
+			"description": "Benutzer fragt nach der Luftfeuchtigkeit",
+			"enabledByDefault": true,
+			"utterances": [
+				"Gib mir die Luftfeuchtigkeit {draußen:=>Room}",
+				"Giib mir die Luftfeuchtigkeit in der {Küche:=>Room}",
+				"Gib mir den prozentualen Wert der Luftfeuchtigkeit im {Badezimmer:=>Room}",
+				"Gib mir den prozentualen Wert der Luftfeuchtigkeit im {Büro:=>Room}",
+				"Wie hoch ist die Luftfeuchtigkeit im {Wohnzimmer:=>Room}",
+				"Was ist der prozentuale Wert der Luftfeuchtigkeit im {Schlafzimmer:=>Room}",
+				"prozentuale Wert der Luftfeuchtigkeit in der {Küche:=>Room}",
+				"Was ist der Luftfeuchtigkeitswert im {Keller:=>Room}",
+				"Luftfeuchtigkeitswert {draußen:=>Room}",
+				"Luftfeuchtigkeitswert im {Badezimmer:=>Room}",
+				"Wie feucht ist es im {Wohnzimmer:=>Room}",
+				"WWie ist die Luftfeuchtigkeit im {Keller:=>Room}",
+				"WWie ist die Luftfeuchtigkeit im {Schlafzimmer:=>Room}"
+			],
+			"slots": [
+				{
+					"name": "Place",
+					"description": "Das Geräte, von dem aus die Messung durchgeführt wird",
+					"required": false,
+					"type": "Room",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "GetTemperature",
+			"description": "Der Benutzer frägt nach der Temperatur",
+			"enabledByDefault": true,
+			"utterances": [
+				"Was ist die Temperatur {draußen:=>Room}",
+				"Was ist die aktuelle Temperatur {draußen:=>Room}",
+				"Was ist die Temperatur {draußen:=>Room}",
+				"hWie kalt ist es",
+				"Wie warm ist es",
+				"Wie tief ist die Temperatur",
+				"Wie hoch ist die Temperatur",
+				"what's the temperature",
+				"what is the temperature",
+				"Whas für eine Temperatur ist im {Wohnzimmer:=>Room}",
+				"Wie kalt ist es {draußen:=>Room}",
+				"Wie warm ist es im {Schlafzimmer:=>Room}",
+				"Wie viel Grad sind es in der {Küche:=>Room}",
+				"Gib mir die Gradzahl im {Büro:=>Room}",
+				"Gib mir die Temperatur im{Badezimmer:=>Room}",
+				"Gib mir die Temperatur im {Wohnzimmer:=>Room}",
+				"Gib mir die Gradzahl im {Schlafzimmer:=>Room}",
+				"Grad im {Keller:=>Room}",
+				"Temperatur in der {Garage:=>Room}",
+				"Wie viel Grad hat es im{Flur:=>Room}",
+				"Was ist die Temperatur im {Büro:=>Room}",
+				"Wie kalt ist es {draußen:=>Room}",
+				"Wie warm ist es im {Schlafzimmer:=>Room}",
+				"Was ist die Temperatur in der {Küche:=>Room}"
+			],
+			"slots": [
+				{
+					"name": "Place",
+					"description": "Das Geräte, von dem aus die Messung durchgeführt wird",
+					"required": false,
+					"type": "Room",
+					"missingQuestion": ""
+				}
+			]
+		}
+	]
+}
